@@ -128,6 +128,11 @@ install_moodle_plugins() {
     install_plugin "question/behaviour/adaptivemultipart" "https://github.com/maths/moodle-qbehaviour_adaptivemultipart"
     install_plugin "question/behaviour/dfcbmexplicitvaildate" "https://github.com/maths/moodle-qbehaviour_dfcbmexplicitvaildate"
     install_plugin "question/behaviour/dfexplicitvaildate" "https://github.com/maths/moodle-qbehaviour_dfexplicitvaildate"
+    moosh -n -p ${install_dir} plugin-install qtype_ddmatch
+    moosh -n -p ${install_dir} plugin-install qtype_gapfill
+    moosh -n -p ${install_dir} plugin-install -f qtype_multichoiceset
+    moosh -n -p ${install_dir} plugin-install qtype_ordering
+    moosh -n -p ${install_dir} plugin-install qtype_oumultiresponse
 
     # Tool
     moosh -n -p ${install_dir} plugin-install tool_brcli
