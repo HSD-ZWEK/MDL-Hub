@@ -138,8 +138,8 @@ install_moodle_plugins() {
     moosh -n -p ${install_dir} plugin-install tool_brcli
 
     # Analytics
-    install_plugin "admin/tool/log/store/lanalytics" "https://github.com/rwthanalytics/moodle-logstore_lanalytics.git"
-    install_plugin "local/learning_analytics" "https://github.com/rwthanalytics/moodle-local_learning_analytics.git"
+    #install_plugin "admin/tool/log/store/lanalytics" "https://github.com/rwthanalytics/moodle-logstore_lanalytics.git"
+    #install_plugin "local/learning_analytics" "https://github.com/rwthanalytics/moodle-local_learning_analytics.git"
 
     # Boost Union Theme
     moosh -n -p ${install_dir} plugin-install theme_boost_union
