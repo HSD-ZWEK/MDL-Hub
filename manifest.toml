@@ -53,7 +53,7 @@ ram.runtime = "50M"
 
         [resources.sources.main]
         url = "https://packaging.moodle.org/stable401/moodle-latest-401.tgz"
-        sha256 ="351c414e235a86cb0f70d6b1d0153fcd77513eea988dd87571a1bf5865c95b7d"
+        sha256 ="fb9b469844a01a185cd81a3b3fc9be345166cfed82574159c7ff3cba6632d87f"
 
     [resources.system_user]
 
