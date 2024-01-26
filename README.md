@@ -15,3 +15,9 @@ A Moodle package version 4.1 for setting up a small Moodle Hub at Düsseldorf Un
 * Official app website: <https://moodle.org/>
 * Official admin documentation: <https://docs.moodle.org/401/en/Main_page>
 * Upstream app code repository: <https://github.com/moodle/moodle>
+
+## Upgrade 
+
+``` bash
+sudo yunohost app upgrade hub -u https://github.com/HSD-ZWEK/MDL-Hub/tree/mdl_hub_ynh --debug
+```
