@@ -7,7 +7,7 @@
 
 A Moodle package version 4.1 for setting up a small Moodle Hub at Düsseldorf University of Applied Sciences.
 
-**Shipped version:** 4.1.6~ynh1
+**Shipped version:** 4.1.8~ynh1
 
 
 ## Documentation and resources
