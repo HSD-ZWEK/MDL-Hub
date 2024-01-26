@@ -43,7 +43,7 @@ ram.runtime = "50M"
     [install.site_name]
     ask.en = "Choose a name for the site you want to create"
     ask.fr = "Choisissez un nom pour le site que vous voulez créer"
-    ask.de = "Wählen Sie einen Namen für den HUB
+    ask.de = "Wählen Sie einen Namen für den HUB"
     type = "string"
     default = "hub"
 
