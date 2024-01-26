@@ -5,7 +5,7 @@ name = "HUB HSD"
 description.en = "Open teaching and learning materials of HSD and cooperation partners."
 description.de = "Offene Lehr- und Lernmaterialien der HSD und Kooperationspartner*innen"
 
-version = "4.1.6~ynh1"
+version = "4.1.8~ynh1"
 
 maintainers = [""]
 
