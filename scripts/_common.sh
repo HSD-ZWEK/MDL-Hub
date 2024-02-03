@@ -85,6 +85,9 @@ install_moosh() {
 
 install_moodle_plugins() {
 
+    # Update plugin list
+    moosh -n -p ${install_dir} plugin-list
+
     # Extract branch from Moodle's version.php
     VERSION=$(grep 'branch' "${install_dir}/version.php" | tail -n 1 | cut -d"'" -f2)
     echo "Moodle branch extracted: $VERSION"
