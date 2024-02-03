@@ -107,30 +107,28 @@ install_moodle_plugins() {
     moosh -n -p ${install_dir} plugin-install format_onetopic
 
     # Local plugins
-    install_plugin "local_invitation" "https://github.com/grabs/moodle-local_invitation"
+     moosh -n -p ${install_dir} plugin-install local_invitation
 
     # Mod plugins
-    install_plugin "mod/publication" "https://github.com/academic-moodle-cooperation/moodle-mod_publication"
+    moosh -n -p ${install_dir} plugin-install mod_publication
     moosh -n -p ${install_dir} plugin-install mod_hvp
-    install_plugin "mod/lightboxgallery" "https://github.com/netspotau/moodle-mod_lightboxgallery"
-    install_plugin "mod/pcast" "https://github.com/sbourget/moodle-mod_pcast"
+    moosh -n -p ${install_dir} plugin-install mod_lightboxgallery
+    moosh -n -p ${install_dir} plugin-install mod_pcast
     install_plugin "mod/subpage" "https://github.com/moodleou/moodle-mod_subpage"
 
     # Microsoft plugins
-    install_plugin "local/o365" "https://github.com/Microsoft/moodle-local_o365"
-    install_plugin "auth/oidc" "https://github.com/Microsoft/moodle-auth_oidc"
-    install_plugin "lib/editor/atto/plugins/teamsmeeting" "https://github.com/enovation/moodle-atto_teamsmeeting"
-    install_plugin "repository/office365" "https://github.com/Microsoft/moodle-repository_office365"
-    install_plugin "theme/boost_o365teams" "https://github.com/Microsoft/moodle-theme_boost_o365teams"
-    install_plugin "blocks/microsoft" "https://github.com/Microsoft/moodle-block_microsoft"
-    install_plugin "filter/oembed" "https://github.com/PoetOS/moodle-filter_oembed"
-    install_plugin "local/office365" "https://github.com/Microsoft/moodle-local_office365"
+    moosh -n -p ${install_dir} plugin-install local_o365
+    moosh -n -p ${install_dir} plugin-install auth_oidc
+    moosh -n -p ${install_dir} plugin-install repository_office365
+    moosh -n -p ${install_dir} plugin-install theme_boost_o365teams
+    moosh -n -p ${install_dir} plugin-install -f filter_oembed
+    moosh -n -p ${install_dir} plugin-install local_office365
 
     # Question types
-    install_plugin "question/type/stack" "https://github.com/maths/moodle-qtype_stack"
-    install_plugin "question/behaviour/adaptivemultipart" "https://github.com/maths/moodle-qbehaviour_adaptivemultipart"
-    install_plugin "question/behaviour/dfcbmexplicitvaildate" "https://github.com/maths/moodle-qbehaviour_dfcbmexplicitvaildate"
-    install_plugin "question/behaviour/dfexplicitvaildate" "https://github.com/maths/moodle-qbehaviour_dfexplicitvaildate"
+    moosh -n -p ${install_dir} plugin-install qtype_stack
+    moosh -n -p ${install_dir} plugin-install qbehaviour_adaptivemultipart
+    moosh -n -p ${install_dir} plugin-install qbehaviour_dfcbmexplicitvaildate
+    moosh -n -p ${install_dir} plugin-install qbehaviour_dfexplicitvaildate
     moosh -n -p ${install_dir} plugin-install qtype_ddmatch
     moosh -n -p ${install_dir} plugin-install qtype_gapfill
     moosh -n -p ${install_dir} plugin-install qtype_answersselect
