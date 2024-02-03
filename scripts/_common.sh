@@ -135,7 +135,8 @@ install_moodle_plugins() {
     moosh -n -p ${install_dir} plugin-install qtype_gapfill
     moosh -n -p ${install_dir} plugin-install qtype_answersselect
     moosh -n -p ${install_dir} plugin-install qtype_ordering
-    moosh -n -p ${install_dir} plugin-install qtype_oumultiresponse
+    moosh -n -p ${install_dir} plugin-install -f qtype_oumultiresponse
+    moosh -n -p ${install_dir} plugin-install -f qtype_multichoiceset
 
     # Report
     install_plugin "report/allbackups" "https://github.com/catalyst/moodle-report_allbackups"
