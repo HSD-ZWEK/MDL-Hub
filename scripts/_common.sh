@@ -134,15 +134,21 @@ install_moodle_plugins() {
     moosh -n -p ${install_dir} plugin-install qtype_ordering
     moosh -n -p ${install_dir} plugin-install qtype_oumultiresponse
 
+    # Report
+    install_plugin "report/allbackups" "https://github.com/catalyst/moodle-report_allbackups"
+
     # Tool
     moosh -n -p ${install_dir} plugin-install tool_brcli
 
     # Analytics
-    #install_plugin "admin/tool/log/store/lanalytics" "https://github.com/rwthanalytics/moodle-logstore_lanalytics.git"
-    #install_plugin "local/learning_analytics" "https://github.com/rwthanalytics/moodle-local_learning_analytics.git"
+    install_plugin "admin/tool/log/store/lanalytics" "https://github.com/rwthanalytics/moodle-logstore_lanalytics.git"
+    install_plugin "local/learning_analytics" "https://github.com/rwthanalytics/moodle-local_learning_analytics.git"
 
     # Boost Union Theme
     moosh -n -p ${install_dir} plugin-install theme_boost_union
+
+    # HSD Theme for Moodle 4
+    install_theme "theme/hsd_rot" "git@gitlab.ruhr-uni-bochum.de:moodle-hsd/locally-hosted-submodules/mdl4-themes.git" "hsd_rot"
 }
 
 #=================================================
